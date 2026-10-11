@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="signUp">
+        <h1>Sign Up</h1>
+        <span id="errGlobal"></span>
+        <form>
+
+            <label for="fName">First Name</label>
+            <input type="text" name="fName" id="fName" placeholder="Harena">
+            <span id="errFName"></span>
+
+            <label for="lName">Last Name</label>
+            <input type="text" name="lName" id="lName" placeholder="Sergio">
+            <span id="errLName"></span>
+
+            <label for="nic">NIC</label>
+            <input type="text" name="nic" id="nic" placeholder="A1234567890123">
+            <span id="errNic"></span>
+            <br>
+            <label for="tel">Mobile Number</label>
+            <input type="text" name="tel" id="tel" placeholder="57164627">
+            <span id="errTel"></span>
+
+            <label for="dob">DOB(dd/mm/yyyy)</label>
+            <input type="date" name="dob" id="dob" placeholder="dd/mm/yyyy">
+            <span id="errDob"></span>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="harenasergio@gmail.com">
+            <span id="errEmail"></span>
+            <br>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="">-- Select a country --</option>
+                <option value="MU">Mauritius</option>
+                <option value="MG">Madagascar</option>
+                <option value="FR">France</option>
+                <option value="RE">Reunion</option>
+                <option value="IN">India</option>
+            </select>
+            <span id="errCountry"></span>
+
+            <h3>Account Information</h3>
+
+            <label for="uName">Username</label>
+            <input type="text" name="uName" id="uName" placeholder="6 to 20 characters">
+            <span id="errUName"></span>
+            <br>
+            <label for="mdp">Password</label>
+            <input type="password" name="mdp" id="mdp" placeholder="5 to 15 characters">
+            <span id="errMdp"></span>
+            <br>
+            <label for="cMdp">Confirm Password</label>
+            <input type="password" name="cMdp" id="cMdp" placeholder="Repeat your password">
+            <span id="errCMdp"></span>
+
+            <h4>CAPTCHA</h4>
+
+            
+            <div>
+                <span>Add the following two numbers :</span>
+                <span id="num1"></span> + <span id="num2"></span>
+                <input type="text" name="captcha" id="captcha" placeholder="Result">
+            </div>
+            <span id="errCaptcha"></span>
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+    <div id="thanks">
+        <p id="merci">Thank you<span id="userName"></span>for submitting your information</p>
+    </div>
+
+    <script src="class.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+:root{
+
+    --baseColor: #8938f1;
+    --greyBorder:#ccc;
+    --fond: #f4f7f6;
+    --texte: #333;
+    --blanc: #fff;
+    --erreur: #e74c3c;
+    --fondErreur: #fde8e7;
+    --police: 'Arial', sans-serif;
+    --radius: 4px;
+    --tailleTexte: 1rem;
+    --espace: 25px;
+    --captcha: #b85809;
+
+}
+   
+    body {
+        font-family: var(--police);
+        background-color: var(--fond);
+        color: var(--texte);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    #signUp, #thanks {
+       
+        padding: 30px;
+        width: 100%;
+        max-width: 500px;
+       
+       
+    }
+
+ 
+    #thanks {
+        display: none;
+        text-align: center;
+        
+    }
+
+    #merci {
+        font-size: 1.2rem;
+        font-weight: 600;
+        
+    #userName{
+        color: var(--baseColor);
+        font-size: 2.4rem;
+        font-family: "Forte", sans-serif;
+    }
+    }
+
+
+    h1, h3, h4 {
+        color: var(--baseColor);
+        margin-top: 0;
+    }
+    h1{ text-align: center;}
+
+    h3, h4 {
+        margin-top: var(--espace);
+        border-bottom: 2px solid var(--baseColor);
+        padding-bottom: 5px;
+    }
+
+    /*  Structure du Formulaire  */
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 12px;
+        margin-bottom: 5px;
+        font-weight: 500;
+        font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select {
+        padding: 10px;
+        border: 1px solid var(--greyBorder);
+        border-radius: var(--radius);
+        font-size: var(--tailleTexte);
+        background-color: var(--blanc);
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input:focus, select:focus {
+        border-color: var(--baseColor);
+        outline: none;
+    }
+    #num1,#num2{
+color:var(--captcha);
+    }
+
+    /*  Bouton Soumettre  */
+    input[type="submit"] {
+        margin-top: var(--espace);
+        background-color: var(--baseColor);
+        color: var(--blanc);
+        border: none;
+        padding: 12px;
+        font-size: var(--tailleTexte);
+        font-weight: bold;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: var(--blanc);
+        color: var(--baseColor);
+        border: 1px solid var(--baseColor);
+    }
+ 
+
+    /*  Gestion des Messages d'Erreur  */
+    [id^="err"] {
+        display: none; 
+        color: var(--erreur);
+        font-size: 0.85rem;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        font-weight: 500;
+    }
+
+    #errGlobal {
+        background-color: var(--fondErreur);
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: var(--radius);
+        width: 100%;
+        box-sizing: border-box;
+    }
